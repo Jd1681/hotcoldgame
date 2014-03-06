@@ -27,6 +27,7 @@ $(document).ready(function(){
  	event.preventDefault();
  	numGuess = 0;
  	guess = 0;
+ 	$("#guessList").find("li").remove();
  	$("#count").text(numGuess);
  	$("#feedback").text("Make your Guess!");
   	answer = Math.floor(Math.random()*101);
