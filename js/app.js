@@ -54,12 +54,12 @@ function evalGuess(){
 		$("#feedback").text("Correct!");
 		$("#guessList").append('<li>' + guess + '</li>');		
 	}
-	else if(Math.abs(answer - guess) < 10) {
+	else if(Math.abs(answer - guess) < 5) {
 		document.getElementById("feedback").style.backgroundColor = 'rgb(198, 0, 57)';
 		$("#feedback").text("Hottest");
 		$("#guessList").append('<li>' + guess + '</li>');
 	}
-	else if(Math.abs(answer - guess) < 20) {
+	else if(Math.abs(answer - guess) < 18) {
 		document.getElementById("feedback").style.backgroundColor = 'rgb(170, 0, 85)';
 		$("#feedback").text("Hotter");
 		$("#guessList").append('<li>' + guess + '</li>');
